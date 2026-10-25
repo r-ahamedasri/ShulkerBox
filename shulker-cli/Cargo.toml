@@ -1,0 +1,18 @@
+[package]
+name = "shulker-cli"
+version = "0.1.0"
+edition = "2021"
+description = "Shulker Box command-line frontend"
+license = "MIT"
+
+[[bin]]
+name = "shulker"
+path = "src/main.rs"
+
+[dependencies]
+shulker-core = { path = "../shulker-core" }
+clap = { version = "4", features = ["derive"] }
+secrecy = "0.8"
+rpassword = "7"
+rand_core = { version = "0.6", features = ["std"] }
+dialoguer = "0.11"
